@@ -1,0 +1,24 @@
+{
+  "name": "klever/laravel-migration-cache",
+  "require-dev": {
+    "phpunit/phpunit": "^6.5",
+    "orchestra/testbench": "^3.5"
+  },
+  "authors": [
+    {
+      "name": "Robin D'Arcy",
+      "email": "robin@klever.co.uk"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Klever\\Laravel\\MigrationCache\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Klever\\Laravel\\MigrationCache\\Tests\\": "tests/"
+    }
+  }
+}
