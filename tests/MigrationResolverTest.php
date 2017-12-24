@@ -29,7 +29,7 @@ class MigrationResolverTest extends TestCase
     /** @test */
     public function it_resolves_a_migration_into_queries()
     {
-        $path = 'migrations/2014_10_12_000000_create_the_users_table.php';
+        $path = __DIR__ . '/migrations/2014_10_12_000000_create_the_users_table.php';
         $this->migrator->requireFiles([$path]);
 
         $resolvedMigration = $this->resolver->resolve($path);

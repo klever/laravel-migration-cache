@@ -19,11 +19,6 @@ class MigrationResolver
 
     public function resolve($migrationPath)
     {
-//        $migrations = $this->migrator->getMigrationFiles('../tests/migrations');
-//        $this->migrator->requireFiles($migrations);
-//        $queries = [];
-
-//        foreach ($migrations as $migration) {
         $migration = $this->migrator->resolve($this->migrator->getMigrationName($migrationPath));
 
         $queries = $this->extractQueries($migration);
